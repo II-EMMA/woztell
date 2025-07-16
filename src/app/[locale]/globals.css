@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+@custom-variant hover (&:hover);
+
+:root {
+  --font-montserrat: var(--font-montserrat-sans), Sans-serif;
+  --font-inter: var(--font-inter-sans), Sans-serif;
+  --bg-primary-blue: #405de6;
+  --border-color-primary-blue: #405de6;
+  --border-primary-white: #e6e6e6;
+  --color-primary-blue: #405de6;
+  --color-primary-white: #f4f4f4;
+  --color-primary-black: #2e2e2e;
+  --color-sub-primary-white: #929292;
+  --bg-sub-primary-white: #929292;
+  --color-sub-secondary-gray: #707070;
+  --bg-cyan-blue: #0064f0;
+  --bg-dark-cyan-blue: #17599c;
+  --bg-primary-white: #f4f4f4;
+  --bg-primary-purple: #833ab4;
+  --bg-white-hovering: #e6e6e6;
+  --color-primary-purple: #833ab4;
+  --bg-secondary-purple: #f4f4f4;
+  --bg-sub-secondary-purple: #e6e6e6;
+  --bg-dark-gray: #161616;
+  --color-primary-gray: #434343;
+  --color-secondary-gray: #666666;
+  --bg-secondary-gray: #666666;
+  --border-color-primary-gray: #c7d4c9;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+.font-mont {
+  font-family: var(--font-montserrat);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-primary-gray {
+  color: var(--color-primary-gray);
+}
+
+.font-primary-white {
+  color: var(--color-primary-white);
+}
+.font-primary-black {
+  color: var(--color-primary-black);
+}
+.font-sub-primary-white {
+  color: var(--color-sub-primary-white);
+}
+.font-sub-secondary-gray {
+  color: var(--color-sub-secondary-gray);
+}
+
+.font-secondary-gray {
+  color: var(--color-secondary-gray);
+}
+
+.font-primary-purple {
+  color: var(--color-primary-purple);
+}
+
+.font-primary-blue {
+  color: var(--color-primary-blue);
+}
+
+.bg-primary-blue {
+  background-color: var(--bg-primary-blue);
+}
+
+.bg-secondary-purple {
+  background-color: var(--bg-secondary-purple);
+}
+.bg-cyan-blue {
+  background-color: var(--bg-cyan-blue);
+}
+
+.bg-sub-secondary-purple {
+  background-color: var(--bg-sub-secondary-purple);
+}
+.bg-dark-gray {
+  background-color: var(--bg-dark-gray);
+}
+.bg-primary-white {
+  background-color: var(--bg-primary-white);
+}
+.bg-sub-primary-white {
+  background-color: var(--bg-sub-primary-white);
+}
+
+.border-primary-white {
+  border-color: var(--border-primary-white);
+  border-width: 1px;
+  border-style: solid;
+}
+.border-b-primary-gray {
+  border-color: var(--border-color-primary-gray);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.border-t-primary-gray {
+  border-color: var(--border-color-primary-gray);
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+.border-l-primary-gray {
+  border-color: var(--border-color-primary-gray);
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+.border-r-primary-gray {
+  border-color: var(--border-color-primary-gray);
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.bg-primary-gray {
+  background-color: var(--bg-primary-gray);
+}
+
+.bg-primary-purple {
+  background-color: var(--bg-primary-purple);
+}
+
+.bg-secondary-gray {
+  background-color: var(--bg-secondary-gray);
+}
+
+.purple-hovering:hover {
+  background-color: var(--bg-primary-purple);
+  outline: none;
+}
+.dark-blue-hovering:hover {
+  background-color: var(--bg-dark-cyan-blue);
+  outline: none;
+}
+.white-hovering:hover {
+  background-color: var(--bg-white-hovering);
+  outline: none;
+}
+
+.blue-white-hovering:hover {
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color-primary-blue);
+  color: var(--color-primary-blue);
+  outline: none;
+}
+
+.border-color-primary-blue {
+  border-color: var(--border-color-primary-blue);
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Image bg */
+.image-background-pseudo-element::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://woztell.com/wp-content/uploads/2025/04/woztell-trama-w.png"); /* Your image URL here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  filter: brightness(0.7) blur(2px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+/* ==> Styling the toggle menu button */
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* ==> Styling the scrollbar */
+
+/* SCROLLBAR STYLING */
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255 0.9) rgba(255, 255, 255, 0.9);
+}
+
+/* Full white background ==> */
+
+.full-bleed-white {
+  box-shadow: 0 0 0 100vmax #fff;
+  clip-path: inset(0 -100vmax);
+}
+.full-bleed-secondary-purple {
+  box-shadow: 0 0 0 100vmax #f4f4f4;
+  clip-path: inset(0 -100vmax);
+}
+.full-bleed-sub-secondary-purple {
+  box-shadow: 0 0 0 100vmax #e6e6e6;
+  clip-path: inset(0 -100vmax);
+}
+.full-bleed-dark-gray {
+  box-shadow: 0 0 0 100vmax #161616;
+  clip-path: inset(0 -100vmax);
+}
+
+.full-bleed-right-purple {
+  box-shadow: 100vmax 0 0 100vmax #f4f4f4;
+  clip-path: inset(0 -100vmax 0 0);
+  z-index: -10;
+}
+
+.full-bleed-horizontal-line {
+  /* This is the core trick for full bleed background */
+  box-shadow: 0 0 0 100vmax var(--your-line-color, #a855f7); /* Default to purple if not overridden */
+  clip-path: inset(0 -100vmax);
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* Selector Dropdown utility ==> */
+
+[x-cloak] {
+  display: none !important;
+}

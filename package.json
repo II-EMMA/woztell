@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer": "^2.4.1",
+    "framer-motion": "^12.23.3",
+    "motion": "^12.23.3",
+    "next": "15.3.5",
+    "next-intl": "^4.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

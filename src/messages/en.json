@@ -1,0 +1,324 @@
+{
+  "header": {
+    "aboutUs": "About us",
+    "support": "Support",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "WhatsApp solutions for",
+    "phrases": ["Ecommerce", "Marketing + Sales", "Support"],
+    "subTitle": {
+      "normalText": [
+        "With",
+        "turn your WhatsApp",
+        "and improve your customers’ experience."
+      ],
+      "boldText": ["WOZTELL", "conversations into sales"]
+    },
+    "metaText": "Meta Business Partner and WhatsApp Business Solution Provide",
+    "btn1": "Talk to us",
+    "btn2": "Free trial"
+  },
+  "trust": {
+    "title": "Clients who trust us"
+  },
+  "marketingAndSales": {
+    "title": {
+      "normalText": "of WhatsApp",
+      "boldText": "Make the most"
+    },
+    "headingText": "Marketing and Sales",
+    "subText": [
+      "Boost your sales by implementing conversational strategies on WhatsApp.",
+      "At WOZTELL, we have repeatedly witnessed how our clients have achieved incredible results by communicating with their customers on the channels they prefer.",
+      "We have extensive experience in various industries and have successfully implemented dozens of marketing and sales strategies using our solutions."
+    ],
+    "blueText": "Are you ready to take your sales to the next level?",
+    "cards": {
+      "cardTexts": [
+        "Multi-agent and multi-channel live chat",
+        "Lead generation and qualification chatbots",
+        "Integration with CRM",
+        "Broadcast Promotional Messages"
+      ]
+    }
+  },
+  "customerSupport": {
+    "headingText": "Customer Support",
+    "subText": [
+      "Your customers want 24/7 support, and if it’s on their preferred channels, even better. But not only that, but they also want an exceptional experience…",
+      "What if you could give them what they ask for automatically or, in more complex cases, provide personalized assistance?",
+      "Delight your customers with a 5-star customer support service that you can also automate, saving up to 80% of your costs."
+    ],
+    "blueText": "Save hundreds of hours",
+    "cards": {
+      "cardTexts": [
+        "Integration with ChatGPT AI",
+        "Chatbots for customer support",
+        "The entire team responds on the same WhatsApp platform",
+        "Integration with support tools"
+      ]
+    }
+  },
+  "conversationalCommerce": {
+    "headingText": "Conversational Commerce",
+    "subText": [
+      "Increase your e-commerce sales with WhatsApp",
+      "Add the most effective channel to your online sales strategy. Empower your marketing, customer service, and sales with WOZTELL.",
+      "Receive orders and payments through WhatsApp",
+      "Whether you have an eCommerce or not, if you want to sell products through channels like WhatsApp, we know how to make it happen."
+    ],
+    "blueText": "Sell more on your e-commerce!",
+    "cards": {
+      "cardTexts": [
+        "Integrate your eCommerce with WhatsApp",
+        "Chatbots for customer support",
+        "Marketing Automation via WhatsApp",
+        "Conversational campaigns with promotions"
+      ]
+    }
+  },
+  "chatGPTAndWhatsApp": {
+    "headingText": "Create a WhatsApp and ChatGPT-connected chatbot that works 24/7",
+    "subHeadingText": "Intelligent Conversations with WhatsApp and ChatGPT",
+    "subText": [
+      "Combine the efficiency of WhatsApp API with the intelligence of ChatGPT to increase sales and reduce costs.",
+      "With WOZTELL, you can connect your ChatGPT GPT to WhatsApp, Instagram, Facebook Messenger, and Webchat to address customer or lead inquiries. Not only based on general information and the model’s configuration instructions. You can unlock a world of possibilities for your business."
+    ],
+    "btnText": "Learn more",
+    "cards": {
+      "cardTexts": [
+        "WhatsApp + ChatGPT for Marketing and Sales",
+        "WhatsApp + ChatGPT for Customer Support",
+        "WhatsApp + ChatGPT for eCommerce",
+        "WhatsApp + ChatGPT for eCommerce"
+      ]
+    }
+  },
+  "cloudApi": {
+    "title": {
+      "normalText": "With WOZTELL, you will have access to all its",
+      "boldText": "exclusive WhatsApp Cloud API features"
+    },
+    "cards": {
+      "cardTexts": [
+        "Interactive Buttons",
+        "List",
+        "Products",
+        "WhatsApp Flows",
+        "Carousel"
+      ]
+    }
+  },
+  "integrate": {
+    "title": "Integrate with"
+  },
+  "why": {
+    "title": {
+      "normalText": ["Why", "?"],
+      "boldText": "Trust Us"
+    },
+    "cards": [
+      "messages processed",
+      "users worldwide",
+      "Countries. We take care of our clients"
+    ]
+  },
+  "projects": {
+    "title": {
+      "normalText": "Some of",
+      "boldText": "our projects"
+    },
+    "subText": "Featured by",
+    "cards": {
+      "title": [
+        "Finance",
+        "Government",
+        "Education",
+        "E-commerce",
+        "Real estate",
+        "Insurance"
+      ],
+      "cardPurpleTexts": [
+        "30% cost savings",
+        "82% recurrence rate in inquiries",
+        "70% automated",
+        "13x more revenue",
+        "27% increase in sales",
+        "276% more users"
+      ],
+      "cardGrayTexts": [
+        "using WhatsApp to send OTPs",
+        "thanks to a WhatsApp chatbot",
+        "support requests",
+        "using Messenger compared to email",
+        "through WhatsApp",
+        "thanks to WhatsApp"
+      ]
+    },
+    "btnText": "Disover more projects"
+  },
+  "contact": {
+    "containerOne": {
+      "title": "Make your conversational project a reality with WOZTELL",
+      "subTitle": {
+        "normalText": [
+          "Our team of experts is ready to develop and",
+          "to your company’s needs."
+        ],
+        "boldText": "implement conversational solutions customized"
+      },
+      "btnText": "Talk with us"
+    },
+    "containerTwo": {
+      "title": {
+        "normalText": [
+          "At",
+          "we believe and implement",
+          "because companies play a key role in developing a better world."
+        ],
+        "boldText": ["WOZTELL,", "Corporate Social Responsibility actions,"]
+      },
+      "subTitle": "Click bellow to know more about our CSR projects"
+    }
+  },
+  "footer": {
+    "textArray": [
+      {
+        "title": "WOZTELL",
+        "subText": [
+          "Conversational Platform",
+          "WhatsApp Cloud",
+          "WhatsApp Flow",
+          "WhatsApp Commerce",
+          "Conversational Solutions",
+          "WhatsApp for Education",
+          "WhatsApp for Real Estate",
+          "WhatsApp for Insurance",
+          "WhatsApp for Automotive",
+          "Success Stories"
+        ]
+      },
+      {
+        "title": "WOZTELL Integrations",
+        "subText": [
+          "WhatsApp & ChatGPT",
+          "WhatsApp & PayPal",
+          "WhatsApp & Zoho CRM",
+          "WhatsApp Chatbots",
+          "Instagram Chatbots",
+          "Facebook Chatbots"
+        ]
+      },
+      {
+        "title": "WOZTELL Platform",
+        "subText": [
+          "Start from Free",
+          "Login",
+          "Live Chat",
+          "Chatbots",
+          "Tutorials",
+          "Marketplace",
+          "Knowledge Base",
+          "Developers"
+        ]
+      },
+      {
+        "title": "WOZTELL Platform",
+        "subText": [
+          "Contact us",
+          "WhatsApp Us",
+          "Support",
+          "Pricing",
+          "Need a project?",
+          "Become a Partner",
+          "Work with us",
+          "WABA 4 Covid",
+          "Brand Kit"
+        ]
+      }
+    ],
+    "imageText": "We are committed to the development of the conversational business",
+    "copyright": [
+      "All rigths reserved @WOZTELL 2025. Legal notice",
+      "Privacy Policy",
+      "Terms of Use",
+      "Conditions Nameof Service",
+      "DPA"
+    ]
+  },
+  "contactPage": {
+    "title": {
+      "normalText": "Your company needs",
+      "boldText": "conversational solutions"
+    },
+    "subText": "Our team of experts is ready to design, develop, and launch your custom conversational solution.",
+    "blueText": "Become a partner",
+    "imageText": "Meta Business Partner and WhatsApp Business Solution Provider",
+    "helpTitle": {
+      "normalText": "Frequently Asked",
+      "boldText": "Questions"
+    },
+    "placeHolderFields": {
+      "name": "Your Name",
+      "email": "Corporative email",
+      "web": "Web",
+      "phone": "WhatsApp",
+      "textArea": "Write Your message"
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "Are you a WhatsApp Cloud API official provider?",
+        "description": "Yes, at WOZTELL, we are WhatsApp BSP (Business Solution Provider) since 2019, and one of the firsts in the world. We have 24/7 service and assist in more than 5 languages such as English, Spanish, and Chinese."
+      },
+      {
+        "id": 2,
+        "title": "Can you create customized chatbots?",
+        "description": "Yes, our projects team will implement and structure the chatbots your company needs to cut down costs and achieve your sales goals."
+      },
+      {
+        "id": 3,
+        "title": "Can I access the last features of WhatsApp and META?",
+        "description": "Yes, since we are BSP, you will always have the new WhatsApp features that WhatsApp launches in the future. You can also use Facebook Messenger, Instagram, and Webchat conversational solutions."
+      },
+      {
+        "id": 4,
+        "title": "What is the project estimate price?",
+        "description": "It depends on the project’s complexity and time. But we promise you is worth every penny. Our projects usually start at 2,5k€."
+      },
+      {
+        "id": 5,
+        "title": "How long does the project development take?",
+        "description": "It all depends on the project’s complexity. Usually, in less than 2 weeks our team will have everything ready."
+      },
+      {
+        "id": 6,
+        "title": "Can I integrate my tech stack with you?",
+        "description": "Yes, our team can integrate your project with your favorite tools."
+      },
+      {
+        "id": 7,
+        "title": "Do you have On-Premise solutions?",
+        "description": "Yes, we are experts in WhatsApp Cloud On-Premise solutions. We have expert engineers that will implement your solutions on your servers."
+      }
+    ]
+  },
+  "supportPage": {
+    "containerOne": {
+      "title": "Welcome to WOZTELL",
+      "placeHolderFields": {
+        "email": "Email Address",
+        "password": "Password"
+      },
+      "btnText": "Log in",
+      "grayText": "Or log in with",
+      "blueText": ["Forgot your password?", "Sign up"],
+      "helpText": "Don't have an account?"
+    },
+    "containerTwo": {
+      "title": "A Team committed to your Success",
+      "subTitle": "Our team of experts is ready to offer you personalized attention via WhatsApp 24/7 in English, Spanish and Chinese. We are here to help you."
+    }
+  }
+}

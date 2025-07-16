@@ -1,4 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import createNextIntlPlugin from "next-intl/plugin";
 
-export default nextConfig;
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "woztell.com",
+        port: "",
+        pathname: "/wp-content/uploads/**",
+      },
+    ],
+  },
+};
+
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);
+
+// export default nextConfig;
