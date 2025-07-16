@@ -21,7 +21,7 @@ export default function Questions({
         >
           <h3
             className={`
-                          flex items-center justify-center gap-x-3 
+                          flex items-center justify-center gap-x-3 md:mx-0 mx-5 md:text-start text-center
                           text-3xl font-semibold group-hover:text-blue-500 transition-colors duration-300
                           ${
                             selectedProject.id === project.id

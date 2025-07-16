@@ -19,7 +19,7 @@ export default async function ContactPage() {
     helpTitle;
 
   return (
-    <section className="flex flex-col max-w-[1500px] mx-auto">
+    <section className="overflow-x-hidden flex flex-col max-w-[1500px] mx-auto">
       <div className="flex md:flex-row md:justify-between flex-col mt-24 mx-14 md:gap-x-32 gap-x-0 md:gap-y-0 gap-y-14">
         <div className="flex flex-col gap-y-6 md:text-start text-center items-center md:items-stretch">
           <p className="text-4xl font-normal font-primary-gray font-inter leading-11 tracking-tight max-w-[480px]">

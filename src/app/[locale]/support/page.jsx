@@ -19,7 +19,7 @@ export default async function SupportPage() {
   const { title: titleContainerTwo, subTitle } = containerTwo;
 
   return (
-    <section className="flex lg:flex-row flex-col lg:gap-x-8 gap-x-0  max-w-[1500px] lg:justify-between mx-auto px-20 py-32">
+    <section className="overflow-x-hidden flex lg:flex-row flex-col lg:gap-x-8 gap-x-0  max-w-[1500px] lg:justify-between mx-auto px-20 py-32">
       <div className="flex flex-col gap-y-5">
         <div className="lg:self-start self-center">
           <Link
