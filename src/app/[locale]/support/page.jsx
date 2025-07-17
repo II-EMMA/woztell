@@ -108,7 +108,7 @@ export default async function SupportPage() {
           </div>
           <div className="flex flex-col gap-y-3 my-5">
             <span className="w-full block flex-grow h-px bg-sub-primary-white" />
-            <div className="lg:self-start self-center flex flex-row gap-x-2.5 items-center my-0.5">
+            <div className="lg:self-start self-center sm:text-start text-center flex flex-row gap-x-2.5 items-center my-0.5">
               <span className="font-sub-primary-white text-sm font-medium">
                 {helpText}
               </span>
