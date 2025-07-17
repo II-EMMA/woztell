@@ -59,7 +59,7 @@ export default async function SupportPage() {
             />
           </div>
         </form>
-        <div className="self-end">
+        <div className="sm:self-end self-center">
           <BlueText>{blueTextOne}</BlueText>
         </div>
         <div>
