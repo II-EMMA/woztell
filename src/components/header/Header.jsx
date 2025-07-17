@@ -1,11 +1,12 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import DropdownSelector from "./DropdownSelector";
 
 export default function Header() {
   const t = useTranslations();
+  const headerRef = useRef(null);
   const [toggle, setToggle] = useState(false);
   const aboutUs = t.raw("header").aboutUs;
   const support = t.raw("header").support;
@@ -16,8 +17,25 @@ export default function Header() {
   const closeToggle = () => {
     setToggle(false);
   };
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (headerRef.current && !headerRef.current.contains(event.target)) {
+        closeToggle();
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [toggle]);
+
   return (
-    <div className="sticky top-0 bg-white z-[400] max-w-[1600px] mx-auto">
+    <div
+      ref={headerRef}
+      className="sticky top-0 bg-white z-[400] max-w-[1600px] mx-auto"
+    >
       <header className="relative h-[72px] flex flex-row justify-between items-center xl:mx-[80px] lg:mx-[40px] md:mx-[30px] mx-[16px] border-b border-dark-black z-[200]">
         <Link href={"./"}>
           <img
@@ -49,7 +67,7 @@ export default function Header() {
             toggle ? "flex" : "hidden"
           } md:w-auto w-full flex md:flex-row flex-col md:gap-x-[180px] justify-between md:flex h-full md:h-auto z-[200] bg-white`}
         >
-          <ul className="flex md:flex-row flex-col md:gap-x-6 gap-y-4 items-center md:py-0 pt-6 pb-32 font-Inter font-normal text-sm z-[200] bg-white">
+          <ul className="flex md:flex-row flex-col md:gap-x-6 gap-y-4 items-center md:py-0 pt-6 pb-14 font-Inter font-normal text-sm z-[200] bg-white">
             <li>
               <Link href={"./"} onClick={closeToggle}>
                 {aboutUs}

@@ -8,7 +8,6 @@ export default async function SupportPage() {
   const currentLocale = await getLocale();
   const t = await getTranslations();
   const isRTL = currentLocale === "ar";
-  console.log(isRTL);
   const containerOne = t.raw("supportPage").containerOne;
   const containerTwo = t.raw("supportPage").containerTwo;
   const {
