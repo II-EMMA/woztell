@@ -1,11 +1,14 @@
 import BlueButton from "@/components/blueBtn";
 import BlueText from "@/components/blueText";
 import WhiteBtn from "@/components/whiteBtn";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export default async function SupportPage() {
+  const currentLocale = await getLocale();
   const t = await getTranslations();
+  const isRTL = currentLocale === "ar";
+  console.log(isRTL);
   const containerOne = t.raw("supportPage").containerOne;
   const containerTwo = t.raw("supportPage").containerTwo;
   const {
@@ -70,23 +73,36 @@ export default async function SupportPage() {
             <span className="block flex-grow h-px bg-sub-primary-white" />
           </div>
           <div className="flex md:flex-row flex-col justify-between items-center md:gap-x-4 gap-x-0 gap-y-4 md:gap-y-0">
-            <WhiteBtn className="w-full py-3 font-semibold font-mont white-hovering bg-white text-black rounded-sm shadow-lg border-primary-white">
+            <WhiteBtn
+              className={`w-full py-3 font-semibold font-mont white-hovering bg-white text-black rounded-sm shadow-lg border-primary-white ${
+                isRTL ? "flex-row-reverse" : "flex-row"
+              } flex items-center justify-center`}
+            >
               <img
                 src="https://platform.woztell.com/assets/39c52b1bcccb20569aa4.png"
                 alt="Google logo"
-                className="max-w-12 max-h-7"
+                className="max-w-11 max-h-5.5"
               />
-              <span className="font-primary-black ml-1.5 text-xl font-medium font-inter">
+              <span
+                className={`font-primary-black ml-1.5 text-xl font-medium font-inter`}
+              >
                 Google
               </span>
             </WhiteBtn>
-            <WhiteBtn className="w-full py-3 font-semibold font-mont white-hovering bg-white text-black rounded-sm shadow-lg border-primary-white">
+
+            <WhiteBtn
+              className={`w-full py-3 font-semibold font-mont white-hovering bg-white text-black rounded-sm shadow-lg border-primary-white ${
+                isRTL ? "flex-row-reverse " : "flex-row"
+              } flex items-center justify-center`}
+            >
               <img
                 src="https://platform.woztell.com/assets/790642551cd99bb66a7e.png"
                 alt="Facebook logo"
-                className="max-w-11 max-h-6"
+                className="max-w-9 max-h-5.5"
               />
-              <span className="font-primary-black ml-1.5 text-xl font-medium font-inter">
+              <span
+                className={`font-primary-black ml-1.5 text-xl font-medium font-inter`}
+              >
                 Facebook
               </span>
             </WhiteBtn>

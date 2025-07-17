@@ -4,7 +4,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export default async function Hero() {
-  const currentLocale = getLocale();
+  const currentLocale = await getLocale();
   const isRTL = currentLocale === "ar";
   const t = await getTranslations();
   const title = t.raw("hero").title;

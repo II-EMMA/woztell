@@ -1,9 +1,7 @@
 "use client";
-
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
-import { use } from "react";
 
 const images = [
   {
@@ -77,21 +75,30 @@ const images = [
 ];
 
 export default function Integrate() {
+  const currentLocale = useLocale();
+  const isRTL = currentLocale === "ar";
   const t = useTranslations();
   const title = t.raw("integrate").title;
+  const duplicatedImages = [...images, ...images];
   return (
-    <section className="py-14 border-t-primary-gray flex items-center justify-between mx-auto px-5 max-w-[1500px] flex-col gap-y-12 overflow-x-hidden">
-      <h5 className="font-primary-gray font-mont text-2xl font-extrabold">
+    <section className="py-8 border-b-primary-gray border-t-primary-gray flex items-center justify-between mx-auto px-5 max-w-[1500px] flex-col gap-y-12">
+      <h5 className="font-primary-gray font-mont text-xl font-extrabold">
         {title}
       </h5>
 
       <div className="bg-purple-200/10 opacity-80">
         <div className="container mx-auto">
-          <div className="overflow-hidden [mask-image:linear-gradient(to_right,_transparent,_black_25%,_black_75%,_transparent)]">
+          <div
+            className={`overflow-hidden ${
+              isRTL
+                ? "[mask-image:linear-gradient(to_left,_transparent,_black_25%,_black_75%,_transparent)]"
+                : "[mask-image:linear-gradient(to_right,_transparent,_black_25%,_black_75%,_transparent)]"
+            }`}
+          >
             <motion.div
-              className="flex gap-14 flex-none pr-14"
+              className={`flex gap-14 flex-none ${isRTL ? "pl-14" : "pr-14"}`}
               animate={{
-                translateX: "-50%",
+                translateX: isRTL ? "50%" : "-50%",
               }}
               transition={{
                 duration: 20,
@@ -100,13 +107,14 @@ export default function Integrate() {
                 repeatType: "loop",
               }}
             >
-              {images.map((image, index) => (
+              {duplicatedImages.map((image, index) => (
                 <Image
                   key={index}
                   src={image.src}
                   alt={image.alt}
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
+                  className="flex-shrink-0"
                 />
               ))}
             </motion.div>

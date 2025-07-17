@@ -8,8 +8,8 @@ export default function Questions({
 }) {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
   return (
-    <div className="flex flex-col gap-y-10 justify-center items-center my-24">
-      <p className="lg:self-start self-center lg:ml-14 text-center font-inter text-3xl font-primary-gray mb-5">
+    <div className="flex flex-col gap-y-10 justify-center items-center sm:my-16 my-12">
+      <p className="lg:self-start self-center lg:mx-14 text-center font-inter text-3xl font-primary-gray mb-5">
         {helpTitleNormalText}{" "}
         <span className="font-bold">{helpTitleBoldText}</span>
       </p>
